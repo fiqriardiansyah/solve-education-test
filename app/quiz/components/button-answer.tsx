@@ -38,6 +38,7 @@ const ButtonAnswerAnimated = ({
           transition={{ duration: 0.7 }}
         >
           <ButtonAnswer
+            title={pickOption && pickOption === option ? option : ""}
             variant={pickOption ? "contained" : "outlined"}
             color={color}
             sx={{

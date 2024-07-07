@@ -27,7 +27,7 @@ export const ContextQuizConsumer = React.createContext<
   Partial<ContextQuizType>
 >({});
 
-const defaultState: Partial<ContextQuizState> = {
+export const defaultState: Partial<ContextQuizState> = {
   tab: "passage",
   passageFontSize: PASSAGE_FONT_SIZES[0],
   questionProgress: 0,
