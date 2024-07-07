@@ -20,7 +20,7 @@ const ContainerCustom = styled(Container)(() => ({
   backgroundSize: "cover",
 }));
 
-const GetStartedButton = styled(Button)(({ theme }) => ({
+const GetStartedButton = styled(Button)(({ theme }: any) => ({
   background: theme.palette.success.main,
   color: "white",
   borderRadius: 100,
