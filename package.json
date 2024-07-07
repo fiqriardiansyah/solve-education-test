@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "format": "prettier --write --ignore-path=.gitignore .",
     "format:check": "prettier --check --ignore-path=.gitignore .",
-    "deploy:vercel": "vercel"
+    "test": "jest"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -34,15 +34,20 @@
     "typescript": "5.5.3"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
     "@tanstack/react-query": "^4.36.1",
     "@tanstack/react-query-devtools": "^4.36.1",
     "@types/react-lottie": "^1.2.10",
     "autoprefixer": "^10.4.19",
+    "babel-jest": "^29.7.0",
     "eslint-config-prettier": "^8.10.0",
     "husky": "^9.0.11",
+    "jest": "^29.7.0",
     "lint-staged": "^15.2.7",
     "postcss": "^8.4.39",
     "prettier": "^2.8.8",
+    "react-test-renderer": "^18.3.1",
     "tailwindcss": "^3.4.4",
     "vercel": "^30.2.3"
   },

@@ -8,13 +8,13 @@ import Question from "./module/question";
 import QuizCompleted from "./components/quiz-completed";
 
 export default function Quiz() {
-    const { tab, currentQuestion } = React.useContext(ContextQuizConsumer);
+  const { tab, currentQuestion } = React.useContext(ContextQuizConsumer);
 
-    if (!currentQuestion) return <QuizCompleted />
+  if (!currentQuestion) return <QuizCompleted />;
 
-    return (
-        <Box sx={{ paddingTop: '55px' }}>
-            {tab === "passage" ? <Passage /> : <Question />}
-        </Box>
-    )
+  return (
+    <Box sx={{ paddingTop: "55px" }}>
+      {tab === "passage" ? <Passage /> : <Question />}
+    </Box>
+  );
 }
